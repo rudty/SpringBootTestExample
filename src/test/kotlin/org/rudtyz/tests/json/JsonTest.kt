@@ -1,7 +1,7 @@
 package org.rudtyz.tests.json
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.rudtyz.tests.Sample
@@ -28,10 +28,10 @@ class JsonTest {
         )
 
         val sampleJson = json.write(sample)
-        Assertions.assertThat(sampleJson)
+        assertThat(sampleJson)
                 .hasJsonPathStringValue("$.name")
                 .extractingJsonPathStringValue("$.name").isEqualTo("json_name")
-        Assertions.assertThat(sampleJson)
+        assertThat(sampleJson)
                 .hasJsonPathNumberValue("$.number")
                 .extractingJsonPathNumberValue("$.number").isEqualTo(88)
 
