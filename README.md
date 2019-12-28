@@ -5,8 +5,8 @@
 
 spring boot 는 2019년 12월 현재 [https://start.spring.io](https://start.spring.io) 기본값인 2.2.2 로 작성하였음
 
-- [테스트 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests)  
-- [소스 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/main/kotlin/org/rudtyz/tests)
+- [테스트 폴더 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests)  
+- [소스 폴더 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/main/kotlin/org/rudtyz/tests)
 
 ### HttpClient 테스트 
 모두 같은 기능을 구현하였으며 기능상에 큰 차이는 없으니 선호하는 클래스를 활용하여 작성할 것 
