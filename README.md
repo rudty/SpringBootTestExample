@@ -4,9 +4,10 @@
 코틀린을 사용했지만 자바로 이식이 쉽도록 작성하였음
 
 spring boot 는 2019년 12월 현재 [https://start.spring.io](https://start.spring.io) 기본값인 2.2.2 로 작성하였음
-  
-[소스 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/main/kotlin/org/rudtyz/tests)
-[테스트 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests)
+
+- [테스트 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests)  
+- [소스 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/main/kotlin/org/rudtyz/tests)
+
 ### HttpClient 테스트 
 모두 같은 기능을 구현하였으며 기능상에 큰 차이는 없으니 선호하는 클래스를 활용하여 작성할 것 
  
@@ -16,7 +17,12 @@ WebTestClient 는 WebFlux 모듈의 추가가 필요
 - [WebTestClientTest](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/webclient/WebTestClientTest1.kt) - Kotlin
 - [WebTestClientTest](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/webclient/WebTestClientTest2.java) - Java
 
- 
+### Jpa 테스트
+- [JpaRepository](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests/jpa)
+
+### json 테스트
+- [JacksonTester](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/json/JsonTest.kt)
+
 ## 기타 
 ### 표준 assert 와 assertThat
 - assertThat 은 org.assertj.core.api.Assertions.assertThat
