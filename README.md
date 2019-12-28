@@ -3,7 +3,7 @@
 
 코틀린을 사용했지만 자바로 이식이 쉽도록 작성하였음
 
-spring boot 는 2019년 12월 현재 [https://start.spring.io](https://start.spring.io) 기본값인 2.2.2 로 작성하였음
+프로젝트 는 2019년 12월 현재 [https://start.spring.io](https://start.spring.io) 기본값인 2.2.2 로 사용하였음
 
 - [테스트 폴더 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests)  
 - [소스 폴더 바로가기](https://github.com/rudty/SpringBootTestExample/tree/master/src/main/kotlin/org/rudtyz/tests)
@@ -29,3 +29,20 @@ WebTestClient 는 WebFlux 모듈의 추가가 필요
 - assert 와 assertThat 모두 사용 가능 
 - assert 사용시 간편함 == 비교 true 에만 유의 
 - assertThat 은 fail 시 틀린 부분을 보여줌
+
+### kotlin project 에서 java 사용
+- 기본적으로는 src/main/java 폴더를 만들어서 사용
+- 소스가 나눠져 있으면 가독성이 좋지 않으므로 kotlin 폴더로 통합
+- build.gradle.kts 의 sourceSets main java setSrcDirs 참고
+
+### h2-console 을 사용하여 sql 로 조회 
+- 다음 코드를 application.properties 에 추가  
+```properties
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:testdb
+```
+- [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/) 접속
+- JDBC URL: jdbc:h2:mem:testdb
+- User Name: sa
+- Connect 클릭 
+
