@@ -17,11 +17,11 @@ WebTestClient 는 WebFlux 모듈의 추가가 필요
 - [WebTestClientTest](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/webclient/WebTestClientTest1.kt) - Kotlin
 - [WebTestClientTest](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/webclient/WebTestClientTest2.java) - Java
 
-### restTemplate 테스트
+### RestTemplate 테스트
 RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있도록 한다
 - [MockRestServiceServer](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/restserviceserver/RestServiceServerTest.kt)
 
-### Jpa 테스트
+### JpaRepository 테스트
 - [JpaRepository](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests/jpa)
 
 ### json 테스트
