@@ -18,4 +18,9 @@ class SampleService(
         val c = a + b
         return "$res"
     }
+
+    fun getGithub(): String {
+        val res = restTemplate.getForObject("https://github.com", String::class.java)
+        return "$res"
+    }
 }

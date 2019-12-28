@@ -31,4 +31,13 @@ class RestServiceServerTest {
         val seriousString = sampleService.seriousWork()
         assertThat(seriousString).isEqualTo("response_sample")
     }
+
+    @Test
+    fun serviceGithubSample() {
+        mockRestServiceServer.expect(requestTo("https://github.com"))
+                .andRespond(withSuccess("github_body", MediaType.TEXT_PLAIN))
+
+        val githubString = sampleService.getGithub()
+        assertThat(githubString).isEqualTo("github_body")
+    }
 }
