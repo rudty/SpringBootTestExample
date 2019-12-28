@@ -27,8 +27,9 @@ RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있�
 ### json 테스트
 - [JacksonTester](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/json/JsonTest.kt)
 
-### System.out.println 이나 Exception.printStackTrace 출력 테스트
+### Logger, System.out.println 이나 Exception.printStackTrace 출력 테스트
  - [SystemOutPrintlnTests](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/output/SystemOutPrintlnTests.kt)
+ - [LoggerTests](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/output/LoggerTests.kt) 
  
 ## 기타 
 ### 표준 assert 와 assertThat
