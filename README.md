@@ -22,7 +22,7 @@ RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있�
 - [MockRestServiceServer](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/restserviceserver/RestServiceServerTest.kt)
 
 ### JpaRepository 테스트
-- [JpaRepository](https://github.com/rudty/SpringBootTestExample/tree/master/src/test/kotlin/org/rudtyz/tests/jpa)
+- [JpaRepository](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/jpa/JpaRepositoryTest.kt)
 
 ### json 테스트
 - [JacksonTester](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/json/JsonTest.kt)
