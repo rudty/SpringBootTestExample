@@ -19,9 +19,9 @@ WebTestClient 는 WebFlux 모듈의 추가가 필요
 
 ### Mock 테스트
 - [MockBean](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/bean/MockBeanTest.kt)
-  - 특정 Component 의 껍데기를 가져와서 반환값을 조정  
+  - Component 의 껍데기를 가져와서 반환값을 조정  
 - [SpyBean](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/bean/SpyBeanTest.kt)
-  - 특정 Component 를 가져와서 반환값을 조정
+  - Component 를 가져와서 반환값을 조정
 
 ### RestTemplate 테스트
 RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있도록 한다
