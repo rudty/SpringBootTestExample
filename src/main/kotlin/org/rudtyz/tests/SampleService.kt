@@ -23,4 +23,6 @@ class SampleService(
         val res = restTemplate.getForObject("https://github.com", String::class.java)
         return "$res"
     }
+
+    fun isRestTemplateNull() = restTemplate != null
 }
