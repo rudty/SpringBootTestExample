@@ -23,21 +23,16 @@ class MockVerify {
         verify(list).add("hello")
     }
 
-//    @BeforeEach
-//    fun setUpExample() {
-//        MockitoAnnotations.initMocks(this)
-//        sampleService = SampleService(restTemplateBuilder)
-//    }
-
     @Test
     fun callBuildInService() {
         /**
          * 보통 테스트에서는 필드 변수로 Mock 변수를 두고 쓰고 있으므로
          * 검사를 하기 위해서는 일단 Mock 의 초기화 후 함수를 호출하는지 검사가 필요합니다.
          *
-         * @BeforeEach 에서는 아직 Mock 객체가 null 이므로 명시적으로 초기화 하기
-         * 위해서는  MockitoAnnotations.initMocks(this) 를 초기화 한 후
-         * 서비스를 초기화하여 사용할 수 있습니다. 위 주석 참고
+         * 보통 테스트에서는 필드 변수를 주로 사용하고 있는데
+         * 만약 @Before, @BeforeEach 에서 초기화가 필요하다면
+         * https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/bean/MockAndNew.kt
+         * 를 참고하여 작성할 수 있습니다.
          */
         val restTemplateBuilder = mock(RestTemplateBuilder::class.java)
         SampleService(restTemplateBuilder)
