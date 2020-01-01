@@ -43,6 +43,7 @@ RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있�
  
  ### 시작 인자 테스트
  - [프로그램 argument 주기](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/argument/ApplicationStartArgument.kt)
+ - [환경변수에 추가](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/argument/ApplicationEnvironment.java) 
  
 ## 기타 
 ### 표준 assert 와 assertThat
