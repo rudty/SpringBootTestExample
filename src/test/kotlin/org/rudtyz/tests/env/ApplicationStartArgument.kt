@@ -1,4 +1,4 @@
-package org.rudtyz.tests.argument
+package org.rudtyz.tests.env
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
