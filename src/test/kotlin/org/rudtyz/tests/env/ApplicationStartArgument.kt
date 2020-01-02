@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.test.context.SpringBootTest
 
+// 이 테스트는
+// SpringBootTest 에 arg 를 사용하였습니다.
+// 실행 인자로 java -jar .... 과 같이 추가하는것 과 같으며
+// 테스트를 위해서는 반드시 이 테스트 단독으로 실행하세요
 @SpringBootTest(args = ["--app.t1=123", "--app.t2=456"])
 class ApplicationStartArgument {
     @Autowired
