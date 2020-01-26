@@ -20,6 +20,8 @@ class HelloWordConfig2 {
     fun helloWorldBean() = "HelloWorld2"
 }
 
+// @Configuration: 실행 시 컨테이너에 반드시 넣습니다
+// @TestConfiguration: @Import 로 주입이 필요합니다
 @SpringBootTest
 @Import(HelloWordConfig1::class)
 class TestConfig {
