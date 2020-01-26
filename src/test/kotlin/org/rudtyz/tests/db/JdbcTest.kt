@@ -4,13 +4,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.rudtyz.tests.Sample
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.transaction.annotation.Propagation
 import org.springframework.transaction.annotation.Transactional
 
-@SpringBootTest
-//@DataJdbcTest
+// @DataJpaTest ?
+// JDBC 기본 기능만 사용하려면
+// @DataJdbcTest 를 활용하십시오
+// 본 예제 에서는 create table 쿼리 생략 용도로
+// JPA 까지 로드했습니다
+
+@DataJpaTest
 class JdbcTest {
 
     @Autowired
@@ -37,8 +42,8 @@ class JdbcTest {
     fun insertSample() {
         jdbcTemplate.execute("insert into sample values('insertSample', 99);");
         val sample = jdbcTemplate
-                .queryForObject("select name, number from sample where name='insertSample' limit 1;") {
-                    rs, _ -> // new RowMapper<Sample>() {
+                .queryForObject("select name, number from sample where name='insertSample' limit 1;") { rs, _ ->
+                    // new RowMapper<Sample>() {
                     val name = rs.getString(1)
                     val number = rs.getInt(2)
                     Sample(name, number)
