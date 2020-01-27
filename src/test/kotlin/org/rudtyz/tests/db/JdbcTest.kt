@@ -6,6 +6,7 @@ import org.rudtyz.tests.Sample
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.jdbc.core.JdbcTemplate
+import org.springframework.test.annotation.Commit
 import org.springframework.transaction.annotation.Propagation
 import org.springframework.transaction.annotation.Transactional
 
@@ -32,6 +33,16 @@ class JdbcTest {
         val num = jdbcTemplate.queryForObject(
                 "select 1 as number;", Int::class.java)
         assertThat(num).isEqualTo(1)
+    }
+
+    // @Test 이후 커밋하는 동작 자체는 위와 같지만
+    // commit 어노테이션은 의미를 조금 더 명확하게 나타냅니다.
+    @Commit
+    @Test
+    fun select_2() {
+        val num = jdbcTemplate.queryForObject(
+                "select 2 as number;", Int::class.java)
+        assertThat(num).isEqualTo(2)
     }
 
     // 이 테스트는 Sample Entity 를 사용하고 있으므로
