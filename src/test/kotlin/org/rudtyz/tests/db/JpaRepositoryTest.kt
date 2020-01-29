@@ -51,7 +51,7 @@ class JpaRepositoryTest {
         assertThrows<RuntimeException> {
             repository.getOne("rep_sample")
         }
-    }
+}
 
     @Test
     fun select_one_1_not_found_optional() {
