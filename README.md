@@ -54,6 +54,9 @@ RestTemplate 를 원격지 연결 없이 테스트 안에서 동작할 수 있�
 ### 테스트 자체에 listener 를 받기 
 - [TestListener](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/listener/CustomTestExecutionListeners.kt)
 
+### 테스트에 시간제한 설정
+- [timeout](https://github.com/rudty/SpringBootTestExample/blob/master/src/test/kotlin/org/rudtyz/tests/time/TimeoutTest.kt)
+ 
 ## 기타 
 ### ApplicationContext 재시작
 기본적으로 @SpringBootTest 어노테이션이 붙은 테스트를 사용한다면 ApplicationContext 를 생성하고 로드하게 됩니다.
